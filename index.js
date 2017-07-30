@@ -15,7 +15,7 @@ http.listen(port, function() {
 
 //route handler refactor, sends file to the homepage
 app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 //handles client connection

@@ -5,7 +5,8 @@ Simple Socket.io chat using express on NodeJS
 Runs a server that pushes messages to the clients through events
 - Server: `index.js`
 - Client: `index.html`
-- Style: `public/css/style.css`
+- Client style: `public/css/`
+- Client script: `public/js/`
 
 #### How to run
 - execute `start.bat`

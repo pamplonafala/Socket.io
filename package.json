@@ -1,0 +1,10 @@
+{
+  "name": "bate-papo-socket",
+  "version": "0.0.1",
+  "description": "socket.io app",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "socket.io": "^2.0.3"
+  }
+}

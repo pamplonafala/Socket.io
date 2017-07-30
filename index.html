@@ -9,24 +9,30 @@
 		<h1>Chat.io</h1>
 		<ul id="messages"></ul>
 		<form action="">
-			<input id="text" autocomplete="off"/><button>Enviar</button>
+			<input id="text" autocomplete="off"/><button id="send">Enviar</button>
 		</form>
 	</body>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-	<script> 
+	<script>
+		//connects with server
 		var socket = io();
+		
+		//submits form and emits message event
 		$('form').submit(function() {
 			socket.emit('message', $('#text').val());
 			$('#text').val('');
 			return false;
 		});
+		
+		//handles message events
 		socket.on('message', function(msg){
 			$('#messages').append($('<li>').text(msg));
 		});
+		
+		//handles info events
 		socket.on('info', function(info){
 			$('#messages').append($('<li>').text(info));
 		});
 	</script>
 </html>
-

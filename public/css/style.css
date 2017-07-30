@@ -14,14 +14,14 @@ form{
 	width: 100%;
 }
 
-form input{
+input#text{
 	border: 0px;
 	padding: 10px;
 	width: 90%;
 	margin-right: 0.5px;
 }
 
-form button{
+button#send{
 	background: #007DC5;
 	border: none;
 	padding: 10px;

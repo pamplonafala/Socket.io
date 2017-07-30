@@ -10,7 +10,7 @@ Runs a server that pushes messages to the clients through events
 
 #### How to run
 - execute `start.bat`
-- point your browser to `http://localhost:8080`
+- point your browser to `http://localhost:8080/`
 
 ##### Notepad++
 you can load npp session using `npp` 

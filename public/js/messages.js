@@ -1,3 +1,6 @@
+//connects with server
+var socket = io();
+
 //submits form and emits message event
 $('form').submit(function() {
 	socket.emit('message', $('#text').val());

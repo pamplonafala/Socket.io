@@ -1,7 +1,8 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var http = require('http').createServer(app);
+var http = require('http');
+var server = http.createServer(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 8080;
 
@@ -9,7 +10,7 @@ var port = process.env.PORT || 8080;
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 //defines a port
-http.listen(port, function() {
+server.listen(port, function() {
 	console.log('http://localhost:' + port + '/');
 });
 
